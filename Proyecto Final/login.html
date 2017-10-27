@@ -2,172 +2,60 @@
 <html>
 
 <head>
-
-  <meta charset="UTF-8">
-
-  <title>Login</title>
-
-    <style>
-@import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
-
-
-
-.body{
-    position: fixed;
-    overflow-y: scroll;
-    width: 100%;
-	top: -20px;
-	left: -20px;
-	right: -40px;
-	bottom: -40px;
-	width: auto;
-	height: auto;
-	background-image: url(https://s3.amazonaws.com/assets.investmentu.com/contents/2014/07/rsz_dollarphotoclub_38602221-e1404998266173.jpg);
-	background-size: cover;
-	-webkit-filter: blur(0px);
-
-}
-
-
-
-.header{
-	position: absolute;
-	top: calc(50% - 35px);
-	left: calc(50% - 255px);
-
-}
-
-.header div{
-	float: left;
-	color: #fff;
-	font-family: 'Exo', sans-serif;
-	font-size: 40px;
-	font-weight: 200;
-}
-
-.header div span{
-	color: #F29E20 !important;
-}
-
-.login{
-	position: absolute;
-	top: calc(50% - 75px);
-	left: calc(50% - 50px);
-	height: 150px;
-	width: 350px;
-	padding: 10px;
-
-}
-
-.login input[type=text]{
-	width: 250px;
-	height: 30px;
-	background: transparent;
-	border: 1px solid rgba(255,255,255,0.6);
-	border-radius: 2px;
-	color: #fff;
-	font-family: 'Exo', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	padding: 4px;
-}
-
-.login input[type=password]{
-	width: 250px;
-	height: 30px;
-	background: transparent;
-	border: 1px solid rgba(255,255,255,0.6);
-	border-radius: 2px;
-	color: #fff;
-	font-family: 'Exo', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	padding: 4px;
-	margin-top: 10px;
-}
-
-.login input[type=button]{
-	width: 260px;
-	height: 35px;
-	background: #fff;
-	border: 1px solid #fff;
-	cursor: pointer;
-	border-radius: 2px;
-	color: #a18d6c;
-	font-family: 'Exo', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	padding: 6px;
-	margin-top: 10px;
-}
-
-.login input[type=button]:hover{
-	opacity: 0.8;
-}
-
-.login input[type=button]:active{
-	opacity: 0.6;
-}
-
-.login input[type=text]:focus{
-	outline: none;
-	border: 1px solid rgba(255,255,255,0.9);
-}
-
-.login input[type=password]:focus{
-	outline: none;
-	border: 1px solid rgba(255,255,255,0.9);
-}
-
-.login input[type=button]:focus{
-	outline: none;
-}
-
-::-webkit-input-placeholder{
-   color: rgba(255,255,255,0.6);
-}
-
-::-moz-input-placeholder{
-   color: rgba(255,255,255,0.6);
-}
-</style>
-
-
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+       <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/user.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Footer.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Google-Style-Login.css">
 </head>
 
-<body oncontextmenu="return false">
+<body>
+	<nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.html">Yourthread </a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active" role="presentation"><a href="Home.html">Home </a></li>
+                     <li class="active" role="presentation"><a href="login.html">Iniciar Sesion </a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Series <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#">Stranger Things</a></li>
+                            <li role="presentation"><a href="#">Game Of Thrones</a></li>
+                            <li role="presentation"><a href="#">The Punisher</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Peliculas <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#">IT </a></li>
+                            <li role="presentation"><a href="#">Blade Runner 2049</a></li>
+                            <li role="presentation"><a href="#">Happy Death Day</a></li>
+                        </ul>
+                    </li>
+                    <li role="presentation"><a href="#">Perfil </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <div class="body"></div>
-		<div class="grad"></div>
-		<div class="header">
-			<div>View<span>Finder</span></div>
-		</div>
-		<br>
-		<form name="login">
-		<div class="login">
-				<input type="text" placeholder="Username" name="userid"><br>
-				<input type="password" placeholder="Password" name="pswrd"><br>
-				<input type="button" onclick="check(this.form)" value="Login"/>
-		</div>
-
-
-
-</form>
-<script language="javascript">
-function check(form)
-{
-
- if(form.userid.value == "Diego" && form.pswrd.value == "Diseño")
-  {
-    alert("Cuando funcione te inicio sesión bien :)")
-  }
- else
- {
-   alert("Please insert correct username/password")
-  }
-}
-</script>
+    <div class="login-card"><img src="assets/img/avatar_2x.png" class="profile-img-card">
+        <p class="profile-name-card"> </p>
+        <form class="form-signin"><span class="reauth-email"> </span>
+            <input class="form-control" type="email" required="" placeholder="Email address" autofocus="" id="inputEmail">
+            <input class="form-control" type="password" required="" placeholder="Password" id="inputPassword">
+            <div class="checkbox">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">Remember me</label>
+                </div>
+            </div><a class="btn btn-primary btn-block btn-lg btn-signin" role="button" href="home.html">Sign in</a></form><a href="#" class="forgot-password">Forgot your password?</a></div>
 </body>
+
 </html>
