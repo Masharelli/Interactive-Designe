@@ -1,0 +1,215 @@
+
+
+<!-- Carousel -->
+
+
+html,
+body {
+  height: 1000%;
+}
+.carousel {
+  width: 100%;
+  background-color: #000;
+  height: 100%;
+}
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-fade .carousel-control .glyphicon {
+  font-size: 6rem;
+}
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 1000%;
+}
+.stopfade {
+  opacity: 0.5;
+}
+.slide-content {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+.slide-content video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transition: 1s opacity;
+  transition: 1s opacity;
+}
+.slide-content video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+.door {
+  font-family: Revista-Black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.door .title {
+  font-size: 14rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  line-height: 13rem;
+}
+.door .description {
+  border-top: 1px solid #fff;
+  margin-top: 15px;
+  font-size: 4rem;
+}
+
+
+
+
+
+  
+@media (min-width: 768px) {
+    .omb_login .omb_forgotPwd {
+        text-align: right;
+    margin-top:79px;
+  }   
+}
+
+.icon-feature{
+  text-align:center;
+}
+
+.icon-feature .glyphicon{
+  font-size:60px;
+}
+
+section.features{
+  background-color:#369;
+  padding:40px 0;
+  color:#fff;
+}
+
+.features h2{
+  color:#fff;
+}
+
+.features .icon-features{
+  margin-top:15px;
+}
+
+.testimonials blockquote{
+  text-align:center;
+}
+
+section.testimonials{
+  margin:50px 0;
+}
+
+.site-footer{
+
+  padding:40px 0;
+  text-align:center;
+}
+
+@media (min-width:768px) {
+  .site-footer h5{
+    text-align:left;
+  }
+}
+
+.site-footer h5{
+  color:inherit;
+  font-size:20px;
+}
+
+.site-footer .social-icons a:hover{
+  opacity:1;
+}
+
+.site-footer .social-icons a{
+  display:inline-block;
+  width:32px;
+  border:none;
+  font-size:20px;
+  border-radius:50%;
+  margin:4px;
+  color:#fff;
+  text-align:center;
+  background-color:#798FA5;
+  height:32px;
+  opacity:0.8;
+  line-height:32px;
+}
+
+@media (min-width:768px) {
+  .site-footer .social-icons{
+    text-align:right;
+  }
+}
+
+body{ background-image: url("assets/img/fondo.jpg") }
+.widget-area.blank {
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+-ms-box-shadow: none;
+-o-box-shadow: none;
+box-shadow: none;
+}
+body .no-padding {
+padding: 0;
+}
+
+
+
+
+img {
+            filter: gray; /* IE6-9 */
+            -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+            -webkit-box-shadow: 0 2px 6px 2px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0 2px 6px 2px rgba(0,0,0,0.75);
+            box-shadow: 0 2px 6px 2px rgba(0,0,0,0.75);
+            margin-bottom: 20px;
+        }
+
+            img:hover {
+                filter: none; /* IE6-9 */
+                -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+                mouse:pointer;
+            }
