@@ -5,7 +5,7 @@
 
 html,
 body {
-  height: 1000%;
+  height: 60px;
 }
 .carousel {
   width: 100%;
@@ -46,7 +46,7 @@ body {
 .carousel,
 .carousel-inner,
 .carousel-inner .item {
-  height: 1000%;
+  height: 500px;
 }
 .stopfade {
   opacity: 0.5;
