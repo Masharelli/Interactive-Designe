@@ -41,7 +41,7 @@ body {
   align-items: center;
 }
 .carousel-fade .carousel-control .glyphicon {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 .carousel,
 .carousel-inner,
@@ -96,7 +96,7 @@ body {
 .door .description {
   border-top: 1px solid #fff;
   margin-top: 15px;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 
